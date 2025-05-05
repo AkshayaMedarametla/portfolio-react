@@ -1,0 +1,150 @@
+.Contact{
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+    background-color:  #0e1d33;
+    color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.Contitle > h2{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 35px;
+    text-underline-offset: 8px;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+.Condata{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.lefdata{
+    padding: 5%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+.lefdata >h3{
+    font-size: 42px;
+    line-height: 1;
+    padding-bottom: 5%;
+}
+.sm{
+    margin-left: 2.3rem;
+}
+.sm1{
+    width: 3%;
+    height: auto;
+    margin-right: 1rem;
+
+}
+.styled {
+    margin: 0 2rem;
+    width: fit-content;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgb(20, 99, 190);
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 83, 184);
+  }
+
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+.l1, .l2 {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l1 {
+    background-color: #204e94;
+    padding: 5%;
+}
+
+.l21 {
+    background-color: #112240;
+    padding: 5%;
+    flex: 1;
+}
+
+.l22 {
+    background-color: #1f4077;
+    padding: 5%;
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .Condata {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .lefdata > h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .styled {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .review {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Contitle > h2 {
+        font-size: 26px;
+        margin-bottom: 2rem;
+    }
+
+    .lefdata {
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .lefdata > h3 {
+        font-size: 24px;
+    }
+
+    .styled {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .l1, .l2, .l22 {
+        padding: 5%;
+    }
+
+}

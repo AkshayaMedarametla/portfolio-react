@@ -1,0 +1,152 @@
+.Home{
+    height: 60vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.img{
+    width: 30%;
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+.photo{
+    object-fit:cover;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.text{
+    width: fit-content;
+    text-align: center;
+
+}
+.text > h2{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: fadein 1s ease-in forwards;
+    animation-delay: 0s;
+}
+.text2 > h3{
+    color: rgb(199, 198, 197);
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    animation-delay: 4s;
+}
+.text h1{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards,
+    typing 3s steps(23) forwards,
+    blink 23s step-end infinite;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+@keyframes typing{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+@keyframes slideToSide {
+to {
+    transform: translateX(-30%);
+}
+}
+
+
+@media (max-width: 768px){
+    .Home{
+        height:fit-content;
+        width: 80%;
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .img{
+        width: 100%;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+    }
+    .photo{
+        object-fit:cover;
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .text{
+        width: fit-content;
+        text-align: center;
+    }
+    .text > h2{
+        overflow: hidden;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: fadein 1s ease-in forwards;
+        animation-delay: 0s;
+    }
+    .text h1{
+        /* margin-inline: auto; */
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards,
+        typing 3s steps(23) forwards,
+        blink 23s step-end infinite;
+        animation-delay: 1s;
+    }
+    
+}

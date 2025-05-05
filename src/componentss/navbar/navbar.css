@@ -1,0 +1,72 @@
+.navbar{
+    color: white;
+    width:80%;
+    height:fit-content ;
+    margin: 0 auto ;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    animation-delay: 4s;
+}
+.logo{
+    width: 10%;
+    align-items: flex-start;
+}
+.loogo{
+    object-fit:cover;
+    width: 50px;    
+}
+a {
+    color: white;
+  }
+  
+.Link{
+    margin: 1rem;
+}
+.item{
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        color: white;
+        max-width:80%;
+        height:fit-content ;
+        margin: 0 auto ;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+    }
+    .logo{
+        width: 10%;
+        align-items: flex-start;
+    }
+    .loogo{
+        object-fit:cover;
+        width: 30px;    
+    }
+    a {
+        color: white;
+      }
+      
+    .Link{
+        margin: 1rem;
+    }
+    .item{
+        text-align: right;
+        
+    }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}

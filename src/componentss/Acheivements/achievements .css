@@ -1,0 +1,77 @@
+.Achievements{
+    margin:2% 10%;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Achtitle >h2{
+    text-align: center;
+    text-decoration: underline;
+    color:aqua;
+    font-size: 35px;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+.Achitems{
+    display:flex ;
+    justify-content: space-between;
+    gap: 7rem;
+}
+.Achleft{
+    height: auto;
+    width: 70%;
+    border-radius: 30px;
+}
+.achimg{
+    border-radius: 30px;
+}
+.Achright{
+    padding: 2rem;
+    line-height: 2;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .Achitems {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .Achleft, .Achright {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .Achtitle > h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .Achievements {
+        margin: 5%;
+        padding: 30px 15px;
+    }
+
+    .Achtitle > h2 {
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+
+    .Achitems {
+        gap: 2rem;
+    }
+
+    .Achright {
+        padding: 1rem;
+        line-height: 1.6;
+    }
+}
