@@ -7,6 +7,7 @@ import Exp from './componentss/Experience/exp';
 import Achievements from './componentss/Acheivements/achievements ';
 import Leadership from './componentss/Leadership/leadership';
 import Contact from './componentss/Contact/contact';
+import './style.css'
 
 
 function App() {
