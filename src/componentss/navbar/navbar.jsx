@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='items'>
             <div className='item'>
                 <a href='#about-me' className='Link'>About</a>
-               <a href="/portfolio-react/resume.pdf" target="_blank" rel="noopener noreferrer"  className='Link'>Resume</a>
+                <a href="/portfolio-react/resume.pdf" target="_blank" rel="noopener noreferrer"  className='Link'>Resume</a>
                 <a href='#contact' className='Link'>Contact</a>
             </div>
         </div>
